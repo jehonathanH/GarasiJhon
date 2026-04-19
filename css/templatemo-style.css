@@ -99,11 +99,10 @@ a:hover {
 	border-radius: 2.5rem;
 	color: #ff1a3c;
 	display: inline-block;
-	font-size: 1.5rem;
-	font-weight: 400;
-	padding: 0.8rem 3.5rem;
-}
 
+	font-size: 1.2rem;
+	padding: 0.5rem 2.2rem;
+}
 .tm-bordered-btn:hover {
 	color: white;
 	background-color: #ff1a3c;
