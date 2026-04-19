@@ -1,44 +1,153 @@
 body {
-	background-color: #0a0a0a;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 19px;
+	font-weight: 300;
+	background: #0a0a0a;
 	color: #ffffff;
 }
 
-strong {
-	color: #ff1a3c;
+a { color: #ff1a3c; }
+a:hover {
+	text-decoration: none;
+	color: #e60023;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .tm-section-intro {
-	background-image: url(../img/culinan.jpg);
+	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+	            url(../img/culinan.jpg);
 	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 800px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
 
-/* TEXT */
-.tm-2-col-text-title {
+.tm-section-intro-title {
+	font-size: 4.5rem;
+	margin-bottom: 2rem;
+	font-weight: 600;
+}
+
+.tm-section-intro-text {
+	font-size: 2rem;
+	margin-bottom: 3rem;
+}
+
+.tm-btn-white-big {
+	font-size: 1.8rem;
+	background: #ff1a3c;
+	color: white;
+	padding: 10px 30px;
+	border-radius: 30px;
+	transition: 0.3s;
+}
+
+.tm-btn-white-big:hover {
+	background: #e60023;
+}
+
+/* ================= CAROUSEL ================= */
+.tm-carousel-item-title {
 	color: #ff1a3c;
+	font-size: 2rem;
 }
 
-.tm-2-col-text-description {
+.tm-carousel-item-text {
 	color: #ccc;
 }
 
-/* BUTTON */
+/* ================= 2 COLUMN ================= */
+.tm-2-col-img-text {
+	display: flex;
+	background: #0f0f0f;
+}
+
+.tm-2-col-text {
+	padding: 5%;
+}
+
+.tm-2-col-text-title {
+	color: #ff1a3c;
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+.tm-2-col-text-description {
+	color: #bbb;
+	font-size: 1.3rem;
+	line-height: 1.8;
+}
+
 .tm-bordered-btn {
 	border: 2px solid #ff1a3c;
 	color: #ff1a3c;
+	border-radius: 30px;
+	padding: 10px 25px;
+	transition: 0.3s;
 }
 
 .tm-bordered-btn:hover {
-	background-color: #ff1a3c;
+	background: #ff1a3c;
 	color: white;
 }
 
-/* ABOUT */
-.tm-blue-bg-row {
-	background-color: #111;
+/* ================= IMAGE STYLE ================= */
+.tm-2-col-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 0.4s;
 }
 
-/* FOOTER */
+.tm-2-col-img img:hover {
+	transform: scale(1.05);
+	filter: brightness(1.1);
+}
+
+/* ================= ABOUT ================= */
+.tm-blue-bg-row {
+	background: linear-gradient(to bottom, #111, #1a1a1a);
+}
+
+.tm-icon-text-box {
+	background: #111;
+	border: 1px solid #222;
+	padding: 30px;
+	color: #ccc;
+	transition: 0.3s;
+}
+
+.tm-icon-text-box:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 0 20px rgba(255,0,0,0.3);
+}
+
+.tm-icon-text-box > .fa {
+	color: #ff1a3c;
+}
+
+.tm-section-title {
+	color: #ff1a3c;
+}
+
+.tm-section-subtitle {
+	color: #aaa;
+}
+
+/* ================= FOOTER ================= */
 .tm-copyright-text {
 	color: #777;
+	text-align: center;
+	padding: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 991px) {
+	.tm-2-col-img-text {
+		display: block;
+	}
 }
