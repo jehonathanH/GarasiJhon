@@ -75,8 +75,15 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: flex-start;
 	padding-left: 8%;
 	padding-right: 8%;
+}
+
+.tm-bordered-btn {
+	display: inline-block;
+	width: auto;
+	align-self: flex-start;
 }
 
 .tm-2-col-text-title {
