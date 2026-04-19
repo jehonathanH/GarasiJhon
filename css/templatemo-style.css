@@ -1,13 +1,7 @@
 body {
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	font-size: 19px;
-	font-weight: 300;
 	background-color: #0a0a0a;
 	color: #ffffff;
 }
-
-a { color: #ff1a3c; }
-a:hover { color: #e60023; }
 
 strong {
 	color: #ff1a3c;
@@ -16,98 +10,35 @@ strong {
 /* HERO */
 .tm-section-intro {
 	background-image: url(../img/culinan.jpg);
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
 	background-size: cover;
-	color: white;
-	height: 800px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
 }
 
-.tm-section-intro-title {
-	font-size: 4.5rem;
-	margin-bottom: 3rem;
-}
-
-.tm-section-intro-text {
-	font-size: 2rem;
-	margin-bottom: 3rem;
-}
-
-/* BUTTON */
-.tm-btn-white-big {
-	background-color: #ff1a3c;
-	color: white;
-	padding: 12px 30px;
-	border-radius: 5px;
-}
-
-.tm-btn-white-big:hover {
-	background-color: #cc001f;
-}
-
-/* SECTION */
-.tm-section {
-	padding-top: 6rem;
-	padding-bottom: 6rem;
-	background-color: #0a0a0a;
-}
-
-.tm-blue-bg-row {
-	background-color: #111;
-}
-
-/* TITLE */
-.tm-section-title {
-	font-size: 2.2rem;
-	margin-bottom: 1rem;
-}
-
-.tm-section-subtitle {
-	color: #aaa;
-}
-
-/* CARD */
-.tm-icon-text-box {
-	background-color: #1a1a1a;
-	border: 1px solid #333;
-	padding: 30px;
-	transition: 0.3s;
-}
-
-.tm-icon-text-box:hover {
-	transform: translateY(-5px);
-}
-
-.tm-icon-text-box-title {
+/* TEXT */
+.tm-2-col-text-title {
 	color: #ff1a3c;
-	margin-bottom: 10px;
 }
 
-.tm-icon-text-box-description {
+.tm-2-col-text-description {
 	color: #ccc;
 }
 
-/* IMAGE */
-.tm-icon-text-box img {
-	width: 100%;
-	border-radius: 5px;
+/* BUTTON */
+.tm-bordered-btn {
+	border: 2px solid #ff1a3c;
+	color: #ff1a3c;
+}
+
+.tm-bordered-btn:hover {
+	background-color: #ff1a3c;
+	color: white;
+}
+
+/* ABOUT */
+.tm-blue-bg-row {
+	background-color: #111;
 }
 
 /* FOOTER */
 .tm-copyright-text {
 	color: #777;
-	padding: 20px;
-	text-align: center;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-	.tm-section-intro-title {
-		font-size: 3rem;
-	}
 }
