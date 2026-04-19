@@ -101,6 +101,13 @@ strong {
 	color: white;
 }
 
+.tm-2-col-img img {
+    width: 100%;
+    height: 350px; /* samakan tinggi */
+    object-fit: cover; /* biar nggak gepeng */
+    border-radius: 10px;
+}
+
 /* ABOUT */
 .tm-blue-bg-row {
 	background: linear-gradient(to bottom, #111, #000);
