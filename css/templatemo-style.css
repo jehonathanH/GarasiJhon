@@ -16,14 +16,17 @@ a:hover {
 .tm-section-intro {
 	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
 	            url(../img/culinan.jpg);
-	background-size: cover;
-	background-position: center;
+	background-attachment: fixed;
+	background-position: center top;
 	background-repeat: no-repeat;
-	height: 800px;
+	background-size: 100% 800px;
+	color: white;
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	height: 800px;
 }
 
 .tm-section-intro-title {
@@ -50,24 +53,30 @@ a:hover {
 	background: #e60023;
 }
 
-/*  CAROUSEL  */
-.tm-carousel-item-title {
-	color: #ff1a3c;
-	font-size: 2rem;
-}
-
-.tm-carousel-item-text {
-	color: #ccc;
-}
-
-/*  2 COLUMN  */
+/*  2 COLUMN (FIXED OCEAN STRUCTURE)  */
 .tm-2-col-img-text {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	overflow: auto;
 	background: #0f0f0f;
 }
 
+/* posisi kanan */
+.tm-2-col-img-lg-right .tm-2-col-img {
+	order: 2;
+}
+.tm-2-col-img-lg-right .tm-2-col-text {
+	order: 1;
+}
+
+/* TEXT */
 .tm-2-col-text {
-	padding: 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 8%;
+	padding-right: 8%;
 }
 
 .tm-2-col-text-title {
@@ -80,8 +89,10 @@ a:hover {
 	color: #bbb;
 	font-size: 1.3rem;
 	line-height: 1.8;
+	margin-bottom: 20px;
 }
 
+/* BUTTON */
 .tm-bordered-btn {
 	border: 2px solid #ff1a3c;
 	color: #ff1a3c;
@@ -95,11 +106,11 @@ a:hover {
 	color: white;
 }
 
-/*  IMAGE STYLE  */
+/*  IMAGE (FIXED)  */
 .tm-2-col-img img {
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	height: auto;
+	display: block;
 	transition: 0.4s;
 }
 
@@ -111,31 +122,21 @@ a:hover {
 /*  ABOUT  */
 .tm-blue-bg-row {
 	background: linear-gradient(to bottom, #111, #1a1a1a);
-}
-
-.tm-icon-text-box {
-	background: #111;
-	border: 1px solid #222;
-	padding: 30px;
-	color: #ccc;
-	transition: 0.3s;
-}
-
-.tm-icon-text-box:hover {
-	transform: translateY(-10px);
-	box-shadow: 0 0 20px rgba(255,0,0,0.3);
-}
-
-.tm-icon-text-box > .fa {
-	color: #ff1a3c;
+	text-align: center;
+	padding: 80px 20px;
 }
 
 .tm-section-title {
 	color: #ff1a3c;
+	font-size: 2.2rem;
+	margin-bottom: 20px;
 }
 
 .tm-section-subtitle {
 	color: #aaa;
+	max-width: 600px;
+	margin: auto;
+	font-size: 1.2rem;
 }
 
 /*  FOOTER  */
