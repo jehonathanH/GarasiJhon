@@ -58,7 +58,7 @@ a:hover {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	overflow: auto;
+	overflow: hidden;
 	background: #0f0f0f;
 }
 
