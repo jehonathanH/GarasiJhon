@@ -1,136 +1,113 @@
 body {
-	font-family: 'Poppins', sans-serif;
-	margin: 0;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 19px;
+	font-weight: 300;
+	background-color: #0a0a0a;
+	color: #ffffff;
 }
 
-/* HERO */
-.tm-section-intro {
-	background: url("../img/culinan.jpg") center/cover no-repeat;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	color: white;
-	position: relative;
-}
-
-.tm-section-intro::before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.9));
-}
-
-.tm-wrapper-center {
-	position: relative;
-}
-
-.tm-section-intro-title {
-	font-size: 4rem;
-}
-
-.tm-section-intro-text {
-	font-size: 1.5rem;
-}
+a { color: #ff1a3c; }
+a:hover { color: #e60023; }
 
 strong {
 	color: #ff1a3c;
 }
 
+/* HERO */
+.tm-section-intro {
+	background-image: url(../img/culinan.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	height: 800px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.tm-section-intro-title {
+	font-size: 4.5rem;
+	margin-bottom: 3rem;
+}
+
+.tm-section-intro-text {
+	font-size: 2rem;
+	margin-bottom: 3rem;
+}
+
 /* BUTTON */
 .tm-btn-white-big {
-	background: white;
-	color: black;
-	padding: 10px 25px;
-	border-radius: 30px;
-	text-decoration: none;
-	display: inline-block;
-	margin-top: 20px;
+	background-color: #ff1a3c;
+	color: white;
+	padding: 12px 30px;
+	border-radius: 5px;
 }
 
 .tm-btn-white-big:hover {
-	background: #ff1a3c;
-	color: white;
+	background-color: #cc001f;
 }
 
 /* SECTION */
-.tm-2-col-img-text {
-	display: flex;
-	align-items: center;
-	margin: 60px 0;
+.tm-section {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+	background-color: #0a0a0a;
 }
 
-.tm-2-col-img img {
-	width: 100%;
-	border-radius: 10px;
-	transition: 0.4s;
-}
-
-.tm-2-col-img img:hover {
-	transform: scale(1.05);
-}
-
-.tm-2-col-text {
-	padding: 40px;
-}
-
-.tm-2-col-text-title {
-	color: #ff1a3c;
-	font-size: 2rem;
-	font-weight: 600;
-}
-
-.tm-2-col-text-description {
-	color: #555;
-	margin: 20px 0;
-}
-
-/* BUTTON BORDER */
-.tm-bordered-btn {
-	border: 2px solid #ff1a3c;
-	color: #ff1a3c;
-	padding: 10px 25px;
-	border-radius: 30px;
-	text-decoration: none;
-}
-
-.tm-bordered-btn:hover {
-	background: #ff1a3c;
-	color: white;
-}
-
-.tm-2-col-img img {
-    width: 100%;
-    height: 350px; /* samakan tinggi */
-    object-fit: cover; /* biar nggak gepeng */
-    border-radius: 10px;
-}
-
-/* ABOUT */
 .tm-blue-bg-row {
-	background: linear-gradient(to bottom, #111, #000);
-	color: white;
-	text-align: center;
-	padding: 60px 20px;
+	background-color: #111;
+}
+
+/* TITLE */
+.tm-section-title {
+	font-size: 2.2rem;
+	margin-bottom: 1rem;
+}
+
+.tm-section-subtitle {
+	color: #aaa;
+}
+
+/* CARD */
+.tm-icon-text-box {
+	background-color: #1a1a1a;
+	border: 1px solid #333;
+	padding: 30px;
+	transition: 0.3s;
+}
+
+.tm-icon-text-box:hover {
+	transform: translateY(-5px);
+}
+
+.tm-icon-text-box-title {
+	color: #ff1a3c;
+	margin-bottom: 10px;
+}
+
+.tm-icon-text-box-description {
+	color: #ccc;
+}
+
+/* IMAGE */
+.tm-icon-text-box img {
+	width: 100%;
+	border-radius: 5px;
 }
 
 /* FOOTER */
-hr {
-	width: 60%;
-	margin: auto;
-}
-
 .tm-copyright-text {
-	text-align: center;
 	color: #777;
 	padding: 20px;
+	text-align: center;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-	.tm-2-col-img-text {
-		flex-direction: column;
+	.tm-section-intro-title {
+		font-size: 3rem;
 	}
 }
