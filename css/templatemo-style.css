@@ -117,11 +117,6 @@ a:hover {
 	transition: 0.4s;
 }
 
-.tm-2-col-img img:hover {
-	transform: scale(1.05);
-	filter: brightness(1.1);
-}
-
 /*  ABOUT  */
 .tm-blue-bg-row {
 	background: linear-gradient(to bottom, #111, #1a1a1a);
