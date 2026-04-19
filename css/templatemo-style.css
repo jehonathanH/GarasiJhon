@@ -18,6 +18,9 @@ a:focus {
 	outline: none;
 }
 
+strong {
+	color: #ff1a3c;
+	
 /* 1. Intro 
 --------------------*/
 .tm-section-intro {
